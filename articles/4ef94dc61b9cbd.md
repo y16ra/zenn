@@ -8,7 +8,7 @@ published: false
 
 # はじめに
 
-Go 1.18 がリリースされたました。
+Go 1.18 がリリースされました。
 
 https://go.dev/blog/go1.18
 
