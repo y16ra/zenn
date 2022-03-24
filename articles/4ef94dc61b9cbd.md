@@ -3,7 +3,7 @@ title: "[作業ログ] 複数バージョンのGoを管理する"
 emoji: "🐥"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["go", "mac"]
-published: false
+published: true
 ---
 
 # はじめに
