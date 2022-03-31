@@ -27,7 +27,7 @@ jobs:
 
       - name: Exec textlint
         run: |
-          npx textlint  --rule no-mix-dearu-desumasu --rule max-ten --rule spellcheck-tech-word -f checkstyle "articles/*.md" >> .textlint.log
+          npx textlint -f checkstyle "articles/*.md" >> .textlint.log
 
       # note: textlintで文章上のミスがあった場合のみ、reviewdogを実行
       - name: Run reviewdog
