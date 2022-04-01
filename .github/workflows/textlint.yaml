@@ -1,9 +1,7 @@
 name: textlint
 
 on:
-  push:
-    branches:
-      - main
+  # Triggers the workflow on push or pull request events but only for the main branch
   pull_request:
     branches:
       - main
@@ -23,7 +21,7 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Install textlint
-        run: "npm install --save-dev textlint textlint-rule-max-ten textlint-rule-spellcheck-tech-word textlint-rule-no-mix-dearu-desumasu"
+        run: "npm install --save-dev textlint textlint-rule-max-ten textlint-rule-spellcheck-tech-word textlint-rule-preset-ja-technical-writing textlint-rule-no-mix-dearu-desumasu"
 
       - name: Exec textlint
         run: |

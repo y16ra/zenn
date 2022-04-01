@@ -1,7 +1,8 @@
 {
     "rules": {
-        "textlint-rule-no-mix-dearu-desumasu" : true,
-        "textlint-rule-max-ten" : true,
-        "textlint-rule-spellcheck-tech-word" : true
+        "textlint-rule-no-mix-dearu-desumasu": true,
+        "textlint-rule-max-ten": true,
+        "textlint-rule-spellcheck-tech-word": true,
+        "preset-ja-technical-writing": true
     }
 }
