@@ -9,7 +9,7 @@ jobs:
   create-review-pr:
     runs-on: ubuntu-latest
     env:
-      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      GH_TOKEN: ${{ secrets.GH_PERSONAL_TOKEN }}
     steps:
       - uses: actions/checkout@v2
       - name: check PR exists
