@@ -13,17 +13,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: reviewdog/action-setup@v1
-        with:
-          reviewdog_version: latest
-
-      - uses: actions/setup-node@v2
-        with:
-          node-version: "15"
       - uses: actions/checkout@v2
-
-      - name: Install textlint
-        run: "npm install --save-dev textlint textlint-rule-max-ten textlint-rule-spellcheck-tech-word textlint-rule-preset-ja-technical-writing textlint-rule-no-mix-dearu-desumasu"
+        with:
+          submodules: true
 
       - name: textlint-github-pr-review
         uses: tsuyoshicho/action-textlint@v3
