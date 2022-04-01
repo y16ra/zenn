@@ -1,4 +1,11 @@
 {
+    "plugins": {
+        "@textlint/markdown": {
+            "extensions": [
+                ".md"
+            ]
+        }
+    },
     "rules": {
         "textlint-rule-no-mix-dearu-desumasu": true,
         "textlint-rule-max-ten": true,
