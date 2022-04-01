@@ -1,0 +1,25 @@
+name: pullrequest
+
+on:
+  push:
+    branches:
+      - "article/**"
+
+jobs:
+  create-review-pr:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - uses: actions/checkout@v2
+      - name: check PR exists
+        id: pr_exists
+        run: |
+          pr_title=${GITHUB_REF##*/}
+          echo "::set-output name=pr_title::$pr_title"
+          echo "::set-output name=count::$(gh pr list -S ${pr_title}' in:title' -B $base_branch | wc -l)"
+
+      - name: Create release pr
+        if: ${{ steps.pr_exists.outputs.count == 0 }}
+        run: |
+          gh pr create -B main -t ${{ steps.pr_exists.outputs.pr_title }} -b ""
