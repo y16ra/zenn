@@ -53,7 +53,7 @@ https://go.dev/dl/
 ## Go1.18のインストール
 
 ```
-$ install golang.org/dl/go1.18@latest
+$ go install golang.org/dl/go1.18@latest
 go: downloading golang.org/dl v0.0.0-20220315170520-faa7218da89a
 $ go1.18 version
 go1.18: not downloaded. Run 'go1.18 download' to install to /Users/${HOME}/sdk/go1.18
@@ -75,10 +75,11 @@ go version go1.18 darwin/arm64
 go1.18 env GOROOT
 ```
 
-またaliasを設定しておくと便利です。
+以下のように `GOROOT/bin` にパスを通しておくとバージョン番号無しで `go` コマンドを実行できるようになります。  
+必要に応じて設定しておきましょう。
 
 ```
-$ alias go=$HOME/sdk/go1.18/bin/go
+export PATH=$(go1.18 env GOROOT)/bin:$PATH
 ```
 
 これで心置きなくバージョンアップしたりお試しができそうです。
