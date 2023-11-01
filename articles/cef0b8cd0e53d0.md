@@ -40,7 +40,7 @@ https://tip.golang.org/doc/comment
 
 > The language server gopls[^1] provides documentation when editing Go source files in IDEs.
 
-*goplusはIDEでGoのソースファイルを編集している時にドキュメントを提供します。*
+*goplsはIDEでGoのソースファイルを編集している時にドキュメントを提供します。*
 
 > The rest of this page documents how to write Go doc comments.
 
@@ -52,7 +52,7 @@ https://tip.golang.org/doc/comment
 
 > Every package should have a package comment introducing the package. It provides information relevant to the package as a whole and generally sets expectations for the package. Especially in large packages, it can be helpful for the package comment to give a brief overview of the most important parts of the API, linking to other doc comments as needed.
 
-*すべてのパッケージには、そのパッケージを紹介するパッケージコメントが必要です。パッケージ全体に関連する情報を提供し、一般的なパッケージに対して期待できることを示します。*
+*すべてのパッケージには、そのパッケージを紹介するパッケージコメントが必要です。パッケージ全体に関連する情報を提供し、全体的にそのパッケージに対して期待できることを示します。*
 
 このページの説明では複数行のコメントアウトをする `/* ~~~ */` ではなく１行コメントのスタイルで例が書かれていました。
 
@@ -106,7 +106,7 @@ package path
 
 > By default, programmers should expect that a type is safe for use only by a single goroutine at a time. If a type provides stronger guarantees, the doc comment should state them. 
 
-*デフォルトでは、プログラマはその型が一度に一つのゴルーチンによってのみ使用され ても安全であることを期待すべきです。もし型がより強力な保証を提供するのであれば、docのコメントにそれを明記すべきです。*
+*デフォルトでは、プログラマはその型が一度に一つのゴルーチンによってのみ使用されても安全であることを期待すべきです。もし型がより強力な保証を提供するのであれば、docのコメントにそれを明記すべきです。*
 
 > Go types should also aim to make the zero value have a useful meaning. If it isn’t obvious, that meaning should be documented. 
 
@@ -130,7 +130,7 @@ package path
 
 > Doc comments should not explain internal details such as the algorithm used in the current implementation. Those are best left to comments inside the function body. It may be appropriate to give asymptotic time or space bounds when that detail is particularly important to callers. 
 
-*Docコメントは、現在の実装で使用されているアルゴリズムなど、内部の詳細を説明してはいけません。それらは関数本体内のコメントに任せるのがベストです。その詳細が呼び出し側にとって特に重要である場合、漸近的な時間または空間の境界を与えることが適切であるかもしれません。*
+*Docコメントは、現在の実装で使用されているアルゴリズムなど、内部の詳細を説明してはいけません。それらは関数本体内のコメントに任せるのがベストです。その詳細が呼び出し側にとって特に重要である場合、漸近的な時間または空間の上界を与えることが適切であるかもしれません。*
 
 Docコメントでメソッド内で使われているアルゴリズムの詳細は書かず、書くなら関数内のコメントにしましょうと。
 Docコメントはあくまでも利用する人に対してのAPIドキュメントだというのを忘れずに。
@@ -218,7 +218,7 @@ Docコメントはあくまでも利用する人に対してのAPIドキュメ�
 
 > A span of unindented non-blank lines defines link targets when every line is of the form “[Text]: URL”. In other text in the same doc comment, “[Text]” represents a link to URL using the given text—in HTML, <a href=“URL”>Text</a>. 
 
-*空白行のないスパンは、各行が"[Text]: URL"の形式である場合にリンクターゲットを定義します。同じdocコメント内の他のテキストでは、"[Text]"は与えられたテキストを使ったURLへのリンク、HTMLでは`<a href="URL">Text</a>`を表します。*
+*空白行のないインデントされていないスパンは、各行が"[Text]: URL"の形式である場合にリンクターゲットを定義します。同じdocコメント内の他のテキストでは、"[Text]"は与えられたテキストを使ったURLへのリンク、HTMLでは`<a href="URL">Text</a>`を表します。*
 
 例
 
