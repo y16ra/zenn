@@ -2,8 +2,8 @@
 title: "Firebase HostingでデプロイしたサイトにBasic認証をかける"
 emoji: "🔥"
 type: "tech" # tech: 技術記事 / idea: アイデア
-topics: []
-published: false
+topics: ['firebase', 'firebase-hosting', 'basic-auth', 'nodejs']
+published: true
 ---
 
 # はじめに
