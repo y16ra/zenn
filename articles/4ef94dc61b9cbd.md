@@ -79,7 +79,9 @@ go1.18 env GOROOT
 必要に応じて設定しておきましょう。
 
 ```
-export PATH=$(go1.18 env GOROOT)/bin:$PATH
+# Go
+export GOROOT=$(go1.18 env GOROOT)
+export PATH=$PATH:$GOROOT/bin
 ```
 
 これで心置きなくバージョンアップしたりお試しができそうです。
