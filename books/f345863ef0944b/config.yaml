@@ -1,0 +1,22 @@
+title: "Windsurf"
+summary: ""
+topics: ["ai", "ide"]
+published: false
+price: 0 # 有料の場合200〜5000
+# 本に含めるチャプターを順番に並べましょう
+chapters:
+  - introduction
+  - install-setup
+  - editor-tour
+  - cascade-agentic-chatbot
+  - terminal-integration
+  - mcp-usage
+  - memories-and-rules
+  - context-awareness
+  - ai-autocomplete-refactor
+  - workflow-automation
+  - one-click-deploy
+  - advanced-settings
+  - troubleshooting
+  - best-practices
+  - appendix
