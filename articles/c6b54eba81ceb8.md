@@ -67,6 +67,10 @@ https://aws.amazon.com/jp/ai/frontier-agents/
 
 ### Kiro Autonomous Agent
 
+![Kiro Autonomous Agent](/images/articles/c6b54eba81ceb8/kiro-autonomous-agent.jpg)
+
+
+
 **Kiro Autonomous Agent**は、自律的なソフトウェア開発・メンテナンスにフォーカスしたエージェントです。
 
 #### 主な機能
@@ -94,6 +98,9 @@ Keynoteでは、30人規模で18ヶ月かかる想定だった大規模な re-ar
 
 ### AWS Security Agent
 
+![AWS Security Agent](/images/articles/c6b54eba81ceb8/aws-security-agent.jpg)
+
+
 **AWS Security Agent**は、セキュリティに特化したFrontier Agentです。最初からセキュアなアプリケーションを構築するのを支援し、セキュリティの専門知識を上流に組み込みます。約20年にわたるAWSクラウドとアプリケーションセキュリティの専門知識とAWSセキュリティのベストプラクティスを活用して、包括的なセキュリティガイダンスを提供します。
 
 #### 主な機能
@@ -115,6 +122,8 @@ https://aws.amazon.com/jp/security-agent/
 これらの機能を活用できると、常に自動的にセキュリティチェックを行うことで、セキュリティの品質を高めることができそうです。また、セキュリティチームなどで手動で行っていた定期的なレビューやスキャンが自動化されることで、エンジニアはより創造的な業務にフォーカスできるようになりそうです。
 
 ### AWS DevOps Agent
+
+![AWS DevOps Agent](/images/articles/c6b54eba81ceb8/aws-devops-agent.jpg)
 
 **AWS DevOps Agent**は、インシデント対応・信頼性向上を目的としたFrontier Agentです。インシデントを解決し、積極的に予防することで、信頼性とパフォーマンスを継続的に向上させます。
 
