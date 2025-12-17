@@ -46,7 +46,7 @@ AIモデルやエージェントを開発するための基盤から、エージ
 
 ![Frontier Agents](/images/articles/c6b54eba81ceb8/intro_frontier_agents.png)
 
-AWSが定義する**Frontier Agents**とは、**現在のものよりもはるかに高い能力を表す、能力における段階的な変化を表す新しいクラスのエージェント**です。次世代のAIエージェントとして、以下の3つの特徴を持ちます：
+AWSが定義する**Frontier Agents**とは、**従来のものよりもはるかに高い能力を表す、新しいクラスのエージェント**です。次世代のAIエージェントとして、以下の3つの特徴を持ちます。
 
 - Autonomous（自律的）
 - Scalable（大規模な拡張可能）
