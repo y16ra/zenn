@@ -4,7 +4,8 @@ emoji: "🚀"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["AWS", "reinvent", "bedrock", "agent", "生成AI"]
 publication_name: "10q89s"
-published: false
+published: true
+published_at: 2025-12-22 08:00
 ---
 
 ## はじめに
