@@ -134,6 +134,21 @@ chapters:
   - chapter-slug-2
 ```
 
+## Slug Rules
+
+Slugs are used as file names for articles (`articles/[slug].md`) and book directories (`books/[slug]/`).
+
+- **Characters**: Only lowercase letters (`a-z`), digits (`0-9`), hyphens (`-`), and underscores (`_`)
+- **Length**: 12 to 50 characters
+- **Uniqueness**: Must be unique across the entire Zenn platform (not just per user)
+- **Immutable**: Once published on zenn.dev, slugs cannot be changed — modifying a slug creates a new separate post
+- **Custom slug**: Use `--slug` option to specify a custom slug when creating content
+
+```bash
+npx zenn new:article --slug my-custom-article-slug
+npx zenn new:book --slug my-custom-book-slug
+```
+
 ## Development Notes
 
 - All content is in Japanese (日本語)
