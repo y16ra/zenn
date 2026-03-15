@@ -6,6 +6,21 @@
             ]
         }
     },
+    "filters": {
+        "comments": true,
+        "allowlist": {
+            "allow": [
+                "ML",
+                "AI",
+                "LLM",
+                "NLP",
+                "RAG",
+                "ROI",
+                "API",
+                "OCR"
+            ]
+        }
+    },
     "rules": {
         "textlint-rule-no-mix-dearu-desumasu": true,
         "textlint-rule-max-ten": true,
