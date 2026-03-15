@@ -92,6 +92,10 @@ The repository uses textlint for Japanese technical writing quality checks. Conf
 
 When editing articles, always run textlint to maintain consistent Japanese writing style.
 
+### Textlint Filters
+- **allowlist**: Technical terms exempt from textlint checks (ML, AI, LLM, NLP, RAG, ROI, API, OCR). Add new terms to `.textlintrc` `filters.allowlist.allow` array.
+- **comments**: `<!-- textlint-disable -->` / `<!-- textlint-enable -->` can disable checks inline, but use sparingly.
+
 ## CI/CD Workflows
 
 GitHub Actions run automatically on PRs and pushes:
@@ -111,6 +115,7 @@ emoji: "😊"  # Any emoji
 type: "tech"  # "tech" for technical articles, "idea" for idea articles
 topics: ["go", "aws"]  # Tags (lowercase, English)
 published: true  # false for drafts
+published_at: 2026-01-01 08:00  # Optional: scheduled publish datetime (JST)
 ---
 ```
 
